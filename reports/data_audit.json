@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-10-12",
+  "source_url": "https://cricsheet.org/downloads/ipl_json.zip",
+  "archive_sha256": "5757e04287179767ff8495f02902bd13812b9572ec8fa2ac1347ec2e9c6d4709",
+  "built_at_utc": "2026-10-12T14:24:37.417355+00:00",
+  "python": "3.13.5",
+  "pandas": "3.0.6",
+  "counts": {
+    "matches": 1243,
+    "deliveries": 295732,
+    "innings_metadata": 2514,
+    "wickets": 14705,
+    "match_players": 27909,
+    "player_aliases": 812,
+    "model_deliveries": 284465,
+    "batter_innings": 18760,
+    "batter_seasons": 2957,
+    "season_halves": 4817,
+    "match_splits": 1243,
+    "coverage": 19
+  },
+  "first_date": "2008-04-18",
+  "last_date": "2026-05-31",
+  "boundaries": 49905,
+  "raw_deliveries": 295732,
+  "primary_deliveries": 284465,
+  "nonwide_regular_deliveries": 285686,
+  "exclusions_disjoint": {
+    "super_over_all": 175,
+    "regular_wides": 9871,
+    "regular_noballs_not_wide": 1221
+  },
+  "extra_audit": {
+    "nonboundary_fours_sixes": 29,
+    "primary_nonstandard_conditions": 5501,
+    "matches_with_outcome_method": 23,
+    "missing_actual_delivery": 0
+  },
+  "checks": "Unique keys; registry IDs; run/extras accounting; nonnegative runs; foreign keys; aggregate reconciliation passed",
+  "caveats": [
+    "Coverage is what Cricsheet supplies, not independently reconciled to every official scorecard.",
+    "Final target metadata is retained separately and must not be used as a historical delivery feature in revised chases.",
+    "Season halves use retrospective calendar midpoints; pre-register a schedule cutoff for prospective experiments.",
+    "Phase is a nominal 1-6/7-15/16-20 over band; consult recorded powerplays for shortened matches.",
+    "This audit describes ingestion only; research.py fits the frozen forecasting experiments."
+  ]
+}

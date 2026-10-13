@@ -1,0 +1,3 @@
+model,N,players,log_loss,brier,player_macro_log_loss,player_macro_brier,subset
+jeffreys_smoothed_individual,13771,187,0.5429380779565111,0.1775914856546753,0.48040755318223166,0.15119225561467783,all_late_players
+jeffreys_smoothed_individual,12270,103,0.5470336895756692,0.17943202779673456,0.5296652818417614,0.17115642678209142,min11_both_halves

@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checks": [
+    "Selection tied to frozen configuration checksum",
+    "sequential: all methods score identical opportunities; probabilities and keys valid; selection uses 2024",
+    "preseason: all methods score identical opportunities; probabilities and keys valid; selection uses 2024",
+    "Context fitting ends before each test season",
+    "All main population fits converged away from concentration bounds",
+    "Every 2027 forecast independently reconstructed from permitted history"
+  ],
+  "python": "3.13.5",
+  "result_sha256": {
+    "annual_priors.csv": "159674180feb22674fc4c35c70f96b61317f897bbebe5aaf2c4af0ef060d14fa",
+    "brown_metrics.csv": "5b5556a90d9dd5abf0fdd107df659adc466a24db21ebffe5f2d18d634ce55fa2",
+    "brown_predictions.csv": "bf8ffebbb4438e0cc15d12bff9b0b48244a91b3f910139a2f1b89efe83e7b51d",
+    "brown_priors.csv": "2ae19f79e8d588bd1431638bf183b44020988f7fda12d923bf73dbbd0ea83b94",
+    "brown_smoothed_sensitivity.csv": "0aa68a4dc455ababde6e8910b4eb1256b3d20c478e2a0a97f3cab9ebc97969de",
+    "brown_uncertainty.csv": "4539f0524e38604d465b285448697c0e890bfa696b9ae3ba70db3bb62ee775f8",
+    "calibration_bins.csv": "0ce071c4ee0a42aaf822e2c910c4034a397b2fa4c1c9c909e45b001a13064c2d",
+    "context_fits.csv": "66e01a268c97251ff66dee81dbdce49f0b080a4a8d58c0ff01be282cad9d19e8",
+    "context_metrics.csv": "c0c5fa34e2c66911790567208abd888b1da7af5b60f23bc0722ff61d91ecd42c",
+    "context_uncertainty.csv": "5a36568561e7493f0f314fc3d6de5d75060d64b5dc6e8ae9dd3ea46cc99952ee",
+    "forecast_2027_all.csv": "c5c785e9565f236f7f78eb8932ab0b882709945c2ecccedceec6c4d171be8928",
+    "league_by_season.csv": "0421ff7adabcfc07e2c99de3689d9cadfb822e789f4fe45ced2740e7a5238e4f",
+    "preseason_by_season.csv": "f96da836f54fede384b2f12ae54b685a60a8fd4299adb5fec2997c222a73cf3c",
+    "preseason_metrics.csv": "179fc890214366229f2f6fa199b77fd5cf6121e354f48c656be7839f3f5fa330",
+    "preseason_predictions.csv": "c4f2d21733b2e136b00a6c4f86e9d5a18eb2319298df4a0777e53b5bd3b2eb51",
+    "preseason_uncertainty.csv": "bf958f5ea4d51ee8424dff425cf51c5c7d98154235871bdb68200014cf962be0",
+    "preseason_validation_grid.csv": "5e85ece00a0842881748f45098abe2ac40467a0ddb6aef47b9dd1670fd256230",
+    "sequential_by_season.csv": "56ddc4bb8d46784bd574105187a209fee79ed2c1368e313b168c6df3195b31a7",
+    "sequential_metrics.csv": "94a4f54070906756125d911122a1e454fdb60963227434d1b817e0001d2e9b5b",
+    "sequential_uncertainty.csv": "e063a0f300ea833afb11c5acac7cb25b16a11bf7de86d879f9af47cf0fa2d514",
+    "sequential_validation_grid.csv": "0eccaf0ef546e5d98ad4b368e3b25af07fc1da2cbd0207303fe1738cfafd1f63",
+    "standard_conditions_metrics.csv": "b6ae5fe833e01a966aa456f2372f6c51c70246a6ea73f91d7ccb2bef71365988",
+    "standard_conditions_uncertainty.csv": "fcea483db0f997e1b2c8ca3176e0f9f11e9ec6a10233ac469bba8b1ea2711695",
+    "subgroups_opposition.csv": "f3c54a22ba411821f4ca3aa0d7710e005498dabf4fc168440182738fedae52b6",
+    "subgroups_phase.csv": "0269d9aa32d993b89a8df5991677d72f43e8529820cdb1b7ec4e633679c8583b",
+    "subgroups_venue_group.csv": "5a93cdd95a83a211504081049c69d8cda54e6d52b398d34c9e5dcb4b3a56c567",
+    "venue_mapping.csv": "9033dfe736deb7e2c747b252861dac4e4ab22061d4d907fb94238e42754114fa",
+    "watchlist_improvers.csv": "5c4191a15a63ecfa53b5cd9971b41d3f1401376c180e5751e023c74216326a76",
+    "watchlist_rebounds.csv": "464d932d8349947f456fde13ed9a8fe1c09bf288a597e9e2be2f221fd34e3aae"
+  }
+}

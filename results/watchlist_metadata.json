@@ -1,0 +1,34 @@
+{
+  "selected_model": "rolling_300",
+  "prior": {
+    "alpha": 15.09088959411317,
+    "beta": 58.62676394475131,
+    "mu": 0.2047120176737197,
+    "strength": 73.71765353886448,
+    "pooled": 0.2162522741055185,
+    "records": 511,
+    "converged": true,
+    "at_strength_bound": false
+  },
+  "baseline_prior": {
+    "alpha": 16.37792526736069,
+    "beta": 67.9167140965493,
+    "mu": 0.19429379366172075,
+    "strength": 84.29463936390998,
+    "pooled": 0.2047534188975432,
+    "records": 513,
+    "converged": true,
+    "at_strength_bound": false
+  },
+  "forecast_as_of": "2026-10-12",
+  "assumed_reference_date": "2027-03-28",
+  "bootstrap_replicates": 1000,
+  "interval": "Percentile stability interval from season-stratified innings resampling and player-level empirical-prior reweighting; not a prediction interval for realised 2027 rate",
+  "limitations": [
+    "Conditional on fixed model and selected history window; no model-selection uncertainty.",
+    "Cannot account for unseen injury, role, squad selection or league changes.",
+    "Intervals are marginal; multiple-testing adjustments are not applied to player lists.",
+    "Bootstrap positive fraction is not a posterior probability of true skill improvement.",
+    "Baseline comparison also reflects a change in the estimated league population prior."
+  ]
+}

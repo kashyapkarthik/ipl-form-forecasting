@@ -1,0 +1,5 @@
+season,model,training_last_date,test_first_date,iterations,recency_coefficient
+2025,context_expanding,2024-05-26,2025-03-22,24,
+2025,context_plus_recent,2024-05-26,2025-03-22,22,0.0414454255313534
+2026,context_expanding,2025-06-03,2026-03-28,24,
+2026,context_plus_recent,2025-06-03,2026-03-28,31,0.02190440514186559

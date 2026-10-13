@@ -1,0 +1,41 @@
+{
+  "sequential": {
+    "winner": "ew_days_365",
+    "family_winners": {
+      "rolling_": "rolling_300",
+      "ew_balls_": "ew_balls_300",
+      "ew_days_": "ew_days_365"
+    },
+    "display_models": [
+      "population",
+      "raw_expanding",
+      "current",
+      "expanding",
+      "rolling_300",
+      "ew_balls_300",
+      "ew_days_365"
+    ],
+    "selection_season": 2024,
+    "selection_log_loss": 0.5121376585588722
+  },
+  "preseason": {
+    "winner": "rolling_300",
+    "family_winners": {
+      "rolling_": "rolling_300",
+      "ew_balls_": "ew_balls_300",
+      "ew_days_": "ew_days_730"
+    },
+    "display_models": [
+      "population",
+      "raw_expanding",
+      "current",
+      "expanding",
+      "rolling_300",
+      "ew_balls_300",
+      "ew_days_730"
+    ],
+    "selection_season": 2024,
+    "selection_log_loss": 0.5147897791385588
+  },
+  "protocol_sha256": "6f978a5e68a38d09fcc673f9a1d5759f0171972fbbbdcaf787886420737abf2f"
+}

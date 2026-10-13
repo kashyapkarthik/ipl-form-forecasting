@@ -42,7 +42,8 @@ def brown():
                 s.loc[ix,'player_rate_mse']=np.mean((v.p-v.B/v.N)**2)
                 transformed=np.arcsin(np.sqrt((v.B+.25)/(v.N+.5)))
                 error=(np.arcsin(np.sqrt(v.p))-transformed)**2-1/(4*v.N)
-                s.loc[ix,'noise_adjusted_arcsine_mse']=error.mean()
+                # The Gaussian approximation is unreliable for very small N.
+                s.loc[ix,'noise_adjusted_arcsine_mse']=error.mean() if label=='min11_both_halves' else np.nan
             metrics.append(s)
     save(pd.concat(metrics),'brown_metrics')
     # Return per-innings loss pairs for a cluster-aware held-out comparison.

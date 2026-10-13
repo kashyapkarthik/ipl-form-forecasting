@@ -1,0 +1,2 @@
+model,reference,observations,date_blocks,log_loss_difference,log_loss_low,log_loss_high,brier_difference,brier_low,brier_high
+ew_days_365,expanding,2202,122,-0.001633139882491532,-0.0023010350297442065,-0.0009964407732097119,-0.0005079053150514882,-0.0007200565716727827,-0.00031051802313252435

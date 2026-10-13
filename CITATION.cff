@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: 'IPL form forecasting: How quickly should we believe a batter has improved?'
+message: 'Please cite this project and Cricsheet when using its analysis or outputs.'
+type: software
+authors:
+  - family-names: Karthik
+    given-names: Kashyap
+version: 1.0.0
+date-released: '2026-10-12'
+license: MIT
+abstract: 'Reproducible boundary-probability forecasting with beta-binomial shrinkage, historical weighting, chronological evaluation and dated IPL 2027 watchlists. Data have separate attribution requirements.'

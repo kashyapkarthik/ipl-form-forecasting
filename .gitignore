@@ -6,3 +6,4 @@ data/processed/
 results/*.parquet
 reports/rebuild_check_before.json
 .DS_Store
+reports/*.log

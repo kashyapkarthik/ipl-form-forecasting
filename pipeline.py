@@ -218,7 +218,7 @@ def build():
             'Final target metadata is retained separately and must not be used as a historical delivery feature in revised chases.',
             'Season halves use retrospective calendar midpoints; pre-register a schedule cutoff for prospective experiments.',
             'Phase is a nominal 1-6/7-15/16-20 over band; consult recorded powerplays for shortened matches.',
-            'No predictive models fitted and no locked test outcomes used to select models.'])
+            'This audit describes ingestion only; research.py fits the frozen forecasting experiments.'])
     (ROOT / 'reports/data_audit.json').write_text(json.dumps(report, indent=2))
     print(json.dumps(report, indent=2))
 
