@@ -43,3 +43,7 @@ Report development (2008–2023), 2024 selection and 2025–2026 follow-up evalu
 Use 2,000 paired date-block bootstrap resamples within each evaluation season for log-loss and Brier differences, matching observation keys exactly. Intervals condition on fitted priors and the observed seasons, omit refitting/model-selection/regime uncertainty, and are not multiple-comparison adjusted. Report season-specific direction and calibration bins; do not treat deliveries as independent evidence.
 
 Publish isolated code, meaningful leakage/role/scoring tests, machine-readable predictions/priors/coverage/scores, figures, a report and a staged future-work plan. Preserve original outputs byte-for-byte. Record source and protocol hashes, seed, reproduction command and verification results.
+
+## Post-run descriptive addition
+
+After the initial opener results were inspected, two parameter-swap diagnostics were added to distinguish centre from width: opener mean with all-batter concentration, and all-batter mean with opener concentration, always updated with opening-only counts. These are explicitly post-protocol explanatory ablations, are not eligible for selection, and do not change the primary models, sensitivity grid or conclusions.

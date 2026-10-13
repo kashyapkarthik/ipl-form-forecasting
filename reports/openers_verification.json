@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    "Raw data and follow-up protocol hashes match; original analysis artifacts remain unchanged",
+    "Opening identities reconstructed directly from raw JSON, including illegal first events; chronology valid",
+    "Every primary forecast reconstructed from only early opening outcomes; all models share late targets",
+    "Primary metrics independently recalculated; selected width matches 2024 ranking and stays fixed",
+    "Bootstrap innings match published player-season totals; interval estimates match score differences",
+    "Primary and evaluation prior fits converge away from bounds; development sensitivity bounds disclosed"
+  ],
+  "development_sensitivity_bound_fits": [
+    {
+      "scenario": "powerplay_only",
+      "season": 2023,
+      "population": "openers"
+    }
+  ],
+  "original_artifacts_unchanged": true,
+  "result_sha256": {
+    "by_season.csv": "204580a8b9a2216fe55f3d0e9d5323624631f46569912ce4aff80a245bf641b7",
+    "calibration.csv": "325fb07f52d85e8b72afcf25d60ebbc6fc1eb69b06ee41177675fa2fba413b99",
+    "coverage.csv": "b4d40e86da2c8f157751603bdd4da3d40be698e4db294f9ebe17e4b7d8bd2c10",
+    "evaluation_innings_predictions.csv": "9bb8b47bfd4d448bca1c9ab1a8b20e4c1adaeb761c818c5d51616c4e513f8e59",
+    "match_count_splits.csv": "200b2295b29bf7e1ce9de7775f5cee72270df8f00be668da5cdbd00b1caf7ddc",
+    "metrics.csv": "afb3940fa295bd4972415e4acf409ee6ffd22d7eefad1b2c8cc23eba1484b24d",
+    "phase_coverage.csv": "35b124f306dc8a84d681d81a58ac7f4219ba80e5c8ec20e3ea8b5ea210d25114",
+    "player_examples.csv": "cd779aee93431dd50e8d1335f864affa605ca3beff490621fab45875a209c720",
+    "predictions.csv": "32605e6a901a9ea9a06cb404b3cdffc47e8bcf45093e568a05affc33f4c41b8c",
+    "priors.csv": "b9f0538022e9a529dc11c1d015098559dc49d56304ef41aeec3da28dadc28a4c",
+    "strength_validation_grid.csv": "399aaafddee7fd062e85156fa481ffa21393e1a2799e264152dc4a6d4b2c0d58",
+    "uncertainty.csv": "963c79ed24967d6af6756969109b46f073345a736ba080daaa5c90ffb6710989"
+  }
+}

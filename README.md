@@ -4,6 +4,20 @@
 
 A Python research project adapting Brown's baseball forecasting question to IPL boundary probabilities, then testing whether forecasts improve when older observations receive less weight.
 
+## New: opening-batter experiment 1 follow-up (13 October 2026)
+
+**Opener-specific shrinkage improves log loss by 0.44% over the original all-batter shrinkage forecast on the same 4,975 late-opening deliveries in 2025–2026.** It beats raw rates, but its advantage over an opener-only population remains uncertain. The opener prior is usually narrower, and deliberately widening it worsens evaluation forecasts. A more appropriate prior centre explains most of the gain.
+
+This is an exploratory follow-up motivated by known original results. Only experiment 1 was extended; the later experiments and dated 2027 forecasts below are unchanged.
+
+**[Read the opener results](docs/OPENERS_REPORT.md)** · [Detailed plan for later experiments (not implemented)](docs/OPENERS_NEXT_STEPS.md) · [Follow-up protocol](docs/OPENERS_PROTOCOL.md) · [Numerical evidence](results/openers)
+
+![Opening-batter comparison](figures/openers/comparison.png)
+
+To reproduce this extension alone, run `python pipeline.py` if processed tables are missing, then `python openers_experiment.py`, `python build_openers_report.py`, `python verify_openers.py` and `python -m pytest -q`. Open `docs/openers.html` for its self-contained local viewer. The original `run_all.py` reproduces the original study; it does not run or select this extension.
+
+## Original full-project findings (12 October 2026)
+
 **Finding:** a 365-day decay model selected on 2024 improves delivery-weighted log loss by **0.30%** over all-history shrinkage on 2025–2026. The incremental gain after context adjustment is uncertain. Recent weighting improves simple predictions here; that is not proof of permanent player improvement.
 
 ![Model comparison](figures/model_comparison.png)
