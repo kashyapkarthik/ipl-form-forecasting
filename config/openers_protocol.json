@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "research_date": "2026-10-13",
+  "status": "Exploratory follow-up after original 2025-2026 results were known",
+  "seed": 20261013,
+  "bootstrap_replicates": 2000,
+  "development_through": 2023,
+  "selection_season": 2024,
+  "evaluation_seasons": [2025, 2026],
+  "raw_logloss_clip": 0.000001,
+  "opening_definition": "Batter or non-striker on the first recorded event of an ordinary innings; score only their eligible deliveries in that innings",
+  "primary_split": "Original shared calendar midpoint by season, with whole dates kept together",
+  "strength_multipliers": [0.1, 0.25, 0.5, 1.0, 2.0, 4.0],
+  "multiplier_selection": "Minimum 2024 all-late-opening delivery-weighted log loss, tie favouring multiplier closest to 1",
+  "sensitivity_scenarios": ["match_count_half", "league_stage_only", "standard_conditions", "powerplay_only"],
+  "leave_one_player_out": true,
+  "claim_limit": "Conditional predictive comparison; neither a fresh confirmatory test nor proof of player ability change"
+}
