@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/processed/
+.ipynb_checkpoints/
+results/*.parquet
+reports/rebuild_check_before.json
+.DS_Store
