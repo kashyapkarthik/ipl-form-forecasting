@@ -1,0 +1,15 @@
+{
+  "research_date": "2026-10-13",
+  "baseline_commit": "69bfaacec2951bc99822ef70bc5ea5db3907b1a4",
+  "seed": 20261013,
+  "positions": [1, 2, 3, 4, 5, 6, 7],
+  "outcomes": ["boundary", "six", "dot", "score30", "score50"],
+  "history_windows": ["current", "previous3_plus_current"],
+  "development_seasons": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "validation_season": 2024,
+  "evaluation_seasons": [2025, 2026],
+  "bootstrap_replicates": 4000,
+  "logloss_clip": 0.000001,
+  "selection": "For each history window separately, rank outcomes by 2024 relative log-loss improvement of empirical Bayes over the same-history position population. An eligible illustration must also beat Jeffreys in 2024 and beat population in aggregated development seasons. If none qualify, name the highest-ranked outcome as weak evidence. Never select on 2025-2026.",
+  "status": "Exploratory outcome comparison on a previously inspected dataset; no new confirmatory holdout"
+}
