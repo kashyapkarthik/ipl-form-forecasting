@@ -15,13 +15,15 @@ LABELS={'expanding':'All-history shrinkage','rolling_300':'Last 300 balls + shri
     'ew_balls_300':'Exponential: 300-ball half-life','ew_days_365':'Exponential: 365-day half-life',
     'ew_days_730':'Exponential: 730-day half-life','population':'Population rate','raw':'Raw player rate',
     'raw_expanding':'Raw all-history rate','beta_binomial':'Beta-binomial shrinkage','current':'Current-season shrinkage'}
-plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.titlesize':13,'axes.labelcolor':'#334155',
+plt.rcParams.update({'svg.hashsalt':'ipl-form-forecasting-v1','font.family':'DejaVu Sans','font.size':10,'axes.titlesize':13,'axes.labelcolor':'#334155',
     'text.color':'#172e3e','axes.spines.top':False,'axes.spines.right':False,'figure.facecolor':'#fbfcfd',
     'axes.facecolor':'#fbfcfd','grid.color':'#dde5e9','axes.edgecolor':'#b5c3cb','savefig.facecolor':'#fbfcfd'})
 
 def export(fig,name):
     fig.savefig(FIG/f'{name}.png',dpi=180,bbox_inches='tight')
-    fig.savefig(FIG/f'{name}.svg',bbox_inches='tight')
+    svg=FIG/f'{name}.svg'
+    fig.savefig(svg,bbox_inches='tight',metadata={'Date':None})
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     plt.close(fig)
 
 
