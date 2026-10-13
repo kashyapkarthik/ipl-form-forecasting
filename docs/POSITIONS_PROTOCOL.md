@@ -16,6 +16,8 @@ For every season and position compare position population (pooled B/N), raw play
 
 Rescore the original all-batter population and shrinkage forecasts on exactly the same position 1–7 deliveries. Include Jeffreys-smoothed raw rates and four explanation checks: fitted position mean without individual updates; all-batter prior with position-only history; position mean with all-batter concentration; all-batter mean with position concentration. These diagnose population centre, strength and history fragmentation without choosing a winner after seeing evaluation scores. Reference priors always use their own early sample under the applicable split; match-count sensitivity is a refit reference, not the original calendar forecast.
 
+Before inspecting the new performance results, add a shared positions-1–7 pooled/shrinkage benchmark. It fits one prior and aggregates each player's early observations across ranks 1–7. This separates the effect of excluding ranks 8+ from the effect of fitting each of the seven positions separately.
+
 ## Reporting
 
 Report aggregate and each-position results, plus each evaluation season. Primary scores: delivery-weighted log loss and unclipped Brier. Supplement with equal-player scores, player-season-position rate MSE and the original >=11-in-each-half subset; the latter is retrospective evaluation, never training eligibility. Keep raw log-loss clipping at 10^-6. Publish the entire model table, not just favourable positions. Add early-history-only and new-position-history coverage.

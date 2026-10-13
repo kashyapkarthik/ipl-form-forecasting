@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": [
+    "Source/protocol hashes match; all earlier tracked research artifacts unchanged",
+    "All eligible batter-innings counts and arrival ranks independently reconstructed from raw JSON",
+    "Every primary posterior, raw rate, cold-start fallback and target count reconstructed from same-position early data",
+    "Original all-batter reference and combined-opening forecasts reproduce committed studies to 1e-10",
+    "All evaluation scores independently recalculated; identical targets and paired interval point estimates verified",
+    "Shared 1\u20137 history/prior forecasts and paired opening-convention aggregate difference reconstructed"
+  ],
+  "test_suite_command": "python -m pytest -q",
+  "fallback_fits": 0,
+  "evaluation_bound_fits": [
+    {
+      "scenario": "separate_positions",
+      "season": 2026,
+      "position_group": 7
+    },
+    {
+      "scenario": "combined_openers",
+      "season": 2026,
+      "position_group": 7
+    },
+    {
+      "scenario": "match_count_half",
+      "season": 2025,
+      "position_group": 5
+    },
+    {
+      "scenario": "match_count_half",
+      "season": 2025,
+      "position_group": 6
+    },
+    {
+      "scenario": "match_count_half",
+      "season": 2026,
+      "position_group": 7
+    }
+  ],
+  "result_sha256": {
+    "by_season.csv": "90a724850c701d2ae27fcb9751865778a692d5bcce6f24ee97dcb3859a7a3a10",
+    "calibration.csv": "2e25636f1518bc0f1533fe36b821acd4df40486a59d7f61ca4dcdda1e1695b10",
+    "coverage.csv": "296e547c71834fd0f19f6bc6c8dc5d0e5c86761bc2adbe4e615bb047cc7ba76b",
+    "evaluation_innings_predictions.csv": "1c9c0302991fa1e1c54ee7aed0f8f4057d2a1ee0e0c45dfe5e9081756fde4383",
+    "match_count_splits.csv": "200b2295b29bf7e1ce9de7775f5cee72270df8f00be668da5cdbd00b1caf7ddc",
+    "metrics.csv": "63411e14da8e22f078bc4584bc04ae01cf880900c632d2d1e6f4b5e150821827",
+    "numerical_pooling_check.csv": "5ca0a7abca44bf95c3bf27c5ea502daa19ba92ac2d05af85eab5565da9061a6c",
+    "opener_convention_comparison.csv": "eeb6fdd972d2d4d262e94253d03778d30cfe1ed2dc46eaad446d29cecf7a485c",
+    "player_examples.csv": "1968489885c6db75b4adbfef35dd78b469790698baa7ae40d8c34b5c5e2ecc2b",
+    "predictions.csv": "8367a1772b675989b67ac39c17a57ffa8f64119d3f344706a3e83040e83c4218",
+    "priors.csv": "20c6d9f8200bb03dfd0c804727501717133e595214129a8703716cb4b3159bb9",
+    "target_coverage.csv": "807018acf32a144ba27d2dcbba7dc9ed795a3aa903f4dd9c48d5ec12d0815af5",
+    "uncertainty.csv": "9fe0f004a913e24359f1da8aad2c6cc7d9b4cca0bbc411ae21782648ce9a3a9a"
+  }
+}

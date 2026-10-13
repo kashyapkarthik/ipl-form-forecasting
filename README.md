@@ -4,7 +4,17 @@
 
 A Python research project adapting Brown's baseball forecasting question to IPL boundary probabilities, then testing whether forecasts improve when older observations receive less weight.
 
-## New: opening-batter experiment 1 follow-up (13 October 2026)
+## New: separate batting positions 1–7 (13 October 2026)
+
+**Position-specific shrinkage improves delivery-weighted log loss by 0.35% over original all-batter shrinkage on the same 12,881 late-half deliveries in 2025–2026.** The effect varies: positions 1, 2, 3 and 7 improve in point estimates; 4–6 worsen. The gain over each position's own population forecast is small and uncertain. Equal-player scoring and earlier years do not favour the new model.
+
+Positions are innings-specific arrival ranks. Slots 1/2 mean initial striker/non-striker, not independently verified scorecard ordering; combining the opening pair gives a similar result. A shared positions-1–7 control separates role matching from excluding lower-order batters. About 21% of evaluation balls have no early history at that exact position.
+
+**[Read the position results](docs/POSITIONS_REPORT.md)** · [Protocol](docs/POSITIONS_PROTOCOL.md) · [Full numerical evidence](results/positions) · [Verification](reports/positions_verification.json)
+
+Reproduce this extension with `python positions_experiment.py`, `python build_positions_report.py`, `python verify_positions.py` and `python -m pytest -q` after creating the existing processed data if needed. `docs/positions.html` is a self-contained local viewer. This is exploratory; no sequential, preseason, context or watchlist experiment was changed.
+
+## Opening-batter experiment 1 follow-up (13 October 2026)
 
 **Opener-specific shrinkage improves log loss by 0.44% over the original all-batter shrinkage forecast on the same 4,975 late-opening deliveries in 2025–2026.** It beats raw rates, but its advantage over an opener-only population remains uncertain. The opener prior is usually narrower, and deliberately widening it worsens evaluation forecasts. A more appropriate prior centre explains most of the gain.
 
