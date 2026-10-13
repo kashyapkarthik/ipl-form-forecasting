@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "Raw archive, protocol, selection, outputs and every protected earlier-study file match their hashes",
+    "Every ordinary batting appearance, complete innings score and legal-ball count rebuilt independently from raw match JSON",
+    "All ten evaluation target sets, same-position past-only histories, posterior formulas and comparator forecasts match raw reconstruction",
+    "All evaluation scores recalculated independently; boundary control reproduces the earlier seven-position study to 1e-10",
+    "Paired uncertainty point estimates and validation-only outcome selections independently verified"
+  ],
+  "ordinary_batting_appearances": 19111,
+  "batter_runs_on_illegal_deliveries": 1696,
+  "zero_legal_ball_appearances": 351,
+  "evaluation_dates": 54,
+  "evaluation_players": 124,
+  "fallback_fits": 0,
+  "bounded_evaluation_fits": 17
+}

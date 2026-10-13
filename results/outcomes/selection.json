@@ -1,0 +1,20 @@
+{
+  "rule": "For each history window separately, rank outcomes by 2024 relative log-loss improvement of empirical Bayes over the same-history position population. An eligible illustration must also beat Jeffreys in 2024 and beat population in aggregated development seasons. If none qualify, name the highest-ranked outcome as weak evidence. Never select on 2025-2026.",
+  "selected": [
+    {
+      "window": "current",
+      "outcome": "dot",
+      "eligible": true,
+      "validation_skill_pct": -0.06050159843786762,
+      "development_skill_pct": 0.04601996816809839
+    },
+    {
+      "window": "previous3_plus_current",
+      "outcome": "score50",
+      "eligible": true,
+      "validation_skill_pct": 1.5260802186528033,
+      "development_skill_pct": 0.2079655507609801
+    }
+  ],
+  "stage": "Written using development and validation only, before evaluation scoring"
+}

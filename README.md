@@ -4,6 +4,18 @@
 
 A Python research project adapting Brown's baseball forecasting question to IPL boundary probabilities, then testing whether forecasts improve when older observations receive less weight.
 
+## New: which batting outcome best illustrates shrinkage? (13 October 2026)
+
+**Six rate with three previous seasons plus the current early season is the strongest observed illustration:** 1.22% lower log loss than its matching position population, or 0.81% lower than current-season position population, on 12,881 late-half balls in 2025–2026. Scoring 50+ improves by 1.04% with longer history, but only 0.13% using the current early season alone. Boundary, six, dot, 30+ and 50+ outcomes were all tested and all results are retained.
+
+The validation selection chose 50+ for longer histories; six rate is the largest realised evaluation gain, so the recommendation is exploratory. Its individual population-comparison interval excludes zero, but the conservative band accounting for all ten outcome/history comparisons does not. Its advantage over Jeffreys smoothing is uncertain. The report explains these distinctions and why the earlier boundary gain over its own position population was only 0.074%, not 0.35%.
+
+**[Read the findings and detailed next steps](docs/OUTCOMES_REPORT.md)** · [Frozen protocol](docs/OUTCOMES_PROTOCOL.md) · [Full results](results/outcomes) · [Verification](reports/outcomes_verification.json)
+
+![Alternative batting outcomes](figures/outcomes/comparison.png)
+
+Reproduce this extension with `python outcomes_experiment.py`, `python verify_outcomes.py`, `python build_outcomes_report.py` and `python -m pytest -q` in the existing environment. The original studies and later sequential, preseason, context and watchlist experiments remain unchanged.
+
 ## New: separate batting positions 1–7 (13 October 2026)
 
 **Position-specific shrinkage improves delivery-weighted log loss by 0.35% over original all-batter shrinkage on the same 12,881 late-half deliveries in 2025–2026.** The effect varies: positions 1, 2, 3 and 7 improve in point estimates; 4–6 worsen. The gain over each position's own population forecast is small and uncertain. Equal-player scoring and earlier years do not favour the new model.
