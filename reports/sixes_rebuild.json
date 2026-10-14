@@ -1,0 +1,669 @@
+{
+  "passed": true,
+  "meaning": "All forecast point estimates, metrics, choices, categories and interval endpoints reproduce within the stated tolerances. Bootstrap prior parameters are diagnosed separately, not asserted identical.",
+  "csv_files_checked": 61,
+  "byte_identical_csv_files": 44,
+  "full_workflow_exit_code": 0,
+  "tests_passed": 38,
+  "entry_point": "python run_all.py",
+  "reference": "Two complete rebuilds on the same pinned archive and frozen protocol",
+  "bootstrap_prior_diagnostic": {
+    "fits": 2400,
+    "strength_bound_fits_first": 14,
+    "strength_bound_fits_second": 15,
+    "largest_strength_difference": 87566.07002773954,
+    "largest_mean_probability_difference": 7.75287677976938e-05,
+    "interpretation": "A few high-concentration bootstrap likelihoods are flat near complete pooling; machine-rounding differences change fitted strength substantially but published rate interval endpoints by less than 0.001 sixes per 100 balls. Parameters are not byte-reproducible; point forecasts and reported conclusions are unchanged."
+  },
+  "files": [
+    {
+      "file": "all_early_spike_flags.csv",
+      "byte_identical": true,
+      "sha256": "1ec3974fd67b8da98ae57ac5432ac90e1e95a27d1ad9e496fab75e083841a2d8",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "annual_priors.csv",
+      "byte_identical": true,
+      "sha256": "d6af9487bcc8c42a8ea9186a8d58a470d5bad01a6d073b148b32867c18cfb8d1",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_annual_metrics.csv",
+      "byte_identical": true,
+      "sha256": "ba3f630e68be5d1d98c760d8a5c99603115accf6d45be3c825ba76607a9041b7",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_calibration.csv",
+      "byte_identical": true,
+      "sha256": "02f25af3de73b529e29ae9b3b60db11ca4ea0b427b8b00f473d6e93dfa5264b0",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_evaluation_predictions.csv",
+      "byte_identical": true,
+      "sha256": "1fb8ee15f70c70ef636136e7d068a93cba925c63fe188c70e1ebbe149703d39f",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_matchcount_metrics.csv",
+      "byte_identical": true,
+      "sha256": "794409f13ca6b4526a047ff96eecaa64765ec776706aefe6e17dfaae231abda2",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_matchcount_uncertainty.csv",
+      "byte_identical": true,
+      "sha256": "547c05e52748ef5062a7027eb683a0c513feee7e906bdd869a8b084c443e5e76",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_metrics.csv",
+      "byte_identical": true,
+      "sha256": "815ecd47773b579e531b62dd2202575b4ca5c61c6ec1d2fc3fd5450a29030362",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_min11_metrics.csv",
+      "byte_identical": true,
+      "sha256": "1c97e9a541bd6839a2c85902accf831b0c1576a7672349b27850df3534c604dc",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_min11_uncertainty.csv",
+      "byte_identical": true,
+      "sha256": "83d702f4c1e40554cb017f860a7f37417fe35601a7371129a5a464c9e5b81414",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_priors.csv",
+      "byte_identical": true,
+      "sha256": "075cd85eb671ad3c97722fc2983a296b92711faf993fca5483c919a8cf96210a",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "brown_uncertainty.csv",
+      "byte_identical": true,
+      "sha256": "3f1a1ec54725d5c4d0ab035b2fe1ed7f6a12aeddfcbeb77fb095303d9510b0af",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "case_trajectories.csv",
+      "byte_identical": true,
+      "sha256": "6a3c54b6c27cc86a25c7e4f98e2c308f594ff0c4a5cc5f1c18e8761c07ea9a5a",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "context_calibration.csv",
+      "byte_identical": false,
+      "sha256": "45790639c55e5c9837411cdc72a1dac182d66199396cd01339b973598c0cc8ff",
+      "numerically_reproduced": true,
+      "differences": {
+        "predicted": {
+          "max_absolute_difference": 1.8041124150158794e-15,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "context_date_losses.csv",
+      "byte_identical": false,
+      "sha256": "1fdd8085a490d7c76bf8ef4886e941f257ff526aed1b4e7b98d86197aea88e73",
+      "numerically_reproduced": true,
+      "differences": {
+        "ll": {
+          "max_absolute_difference": 7.531752999057062e-13,
+          "tolerance": 1e-10
+        },
+        "bs": {
+          "max_absolute_difference": 1.3855583347321954e-13,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "context_fits.csv",
+      "byte_identical": false,
+      "sha256": "8adc01a3c446fb71fc6d06192f5aa527f8b6370203ebcee14df95b8207e77445",
+      "numerically_reproduced": true,
+      "differences": {
+        "recent_coefficient": {
+          "max_absolute_difference": 8.801986917106319e-15,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "context_historical_selection.csv",
+      "byte_identical": true,
+      "sha256": "05d137323574af17c239357cee90006472e6947db9194e8bf21854a259c47f92",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "context_metrics.csv",
+      "byte_identical": false,
+      "sha256": "471642eee2a41c963eb1edf5c50d931190d2939c55b923a02c7bc70f41d5afaf",
+      "numerically_reproduced": true,
+      "differences": {
+        "log_loss": {
+          "max_absolute_difference": 1.1102230246251565e-16,
+          "tolerance": 1e-10
+        },
+        "player_macro_log_loss": {
+          "max_absolute_difference": 2.220446049250313e-16,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "context_uncertainty.csv",
+      "byte_identical": false,
+      "sha256": "27a888abec069f4ef49fae49e83da0aaf68ada1d3429f742bdab8dcf0f576322",
+      "numerically_reproduced": true,
+      "differences": {
+        "log_loss_difference": {
+          "max_absolute_difference": 1.045712995362269e-16,
+          "tolerance": 1e-10
+        },
+        "log_loss_low": {
+          "max_absolute_difference": 1.83379244948767e-16,
+          "tolerance": 1e-10
+        },
+        "log_loss_high": {
+          "max_absolute_difference": 2.0000819576926343e-16,
+          "tolerance": 1e-10
+        },
+        "brier_difference": {
+          "max_absolute_difference": 2.6400322900022033e-17,
+          "tolerance": 1e-10
+        },
+        "brier_low": {
+          "max_absolute_difference": 1.9694363056609737e-17,
+          "tolerance": 1e-10
+        },
+        "brier_high": {
+          "max_absolute_difference": 5.5138456734465935e-17,
+          "tolerance": 1e-10
+        },
+        "skill_pct": {
+          "max_absolute_difference": 4.4401982091102354e-14,
+          "tolerance": 1e-10
+        },
+        "skill_low": {
+          "max_absolute_difference": 7.639722188201858e-14,
+          "tolerance": 1e-10
+        },
+        "skill_high": {
+          "max_absolute_difference": 2.9601321394068236e-14,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "coverage.csv",
+      "byte_identical": true,
+      "sha256": "e1c30a6c154d9fa2abfd0628a93869040fefc6c7c82af29f2d8243dc6f7ec712",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "forecast_2027_all.csv",
+      "byte_identical": false,
+      "sha256": "a984b7d375ba14b8cec50c1c59d00617e6519d4b4675869621a851c5730e02f4",
+      "numerically_reproduced": true,
+      "differences": {
+        "forecast_low": {
+          "max_absolute_difference": 4.689098001803282e-06,
+          "tolerance": 1e-05
+        },
+        "forecast_high": {
+          "max_absolute_difference": 1.9995616746953937e-06,
+          "tolerance": 1e-05
+        },
+        "change_low": {
+          "max_absolute_difference": 9.67223805900183e-07,
+          "tolerance": 1e-05
+        },
+        "change_high": {
+          "max_absolute_difference": 1.1475783572023612e-06,
+          "tolerance": 1e-05
+        },
+        "expected_per100_low": {
+          "max_absolute_difference": 0.00046890980017444406,
+          "tolerance": 0.001
+        },
+        "expected_per100_high": {
+          "max_absolute_difference": 0.0001999561674672634,
+          "tolerance": 0.001
+        }
+      }
+    },
+    {
+      "file": "forecast_2027_roles.csv",
+      "byte_identical": true,
+      "sha256": "7ee5d5651d1e7610c6996c94f79f81befd7eb1837b893986a78d7fbac7b54d11",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "forecast_prior_resamples.csv",
+      "byte_identical": false,
+      "sha256": "4cdceb8b65e936111f6c22fdddafc5baca3c7d3f2d32b639e667c390292e90e1",
+      "numerically_reproduced": null,
+      "differences": {}
+    },
+    {
+      "file": "innings.csv",
+      "byte_identical": true,
+      "sha256": "349cfada0322ef9159fd8881c2a4d02e4e455ff05a5f9e087a033f343d1de2a6",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "opposition_mapping.csv",
+      "byte_identical": true,
+      "sha256": "1e7510209d9e1b228f689f04d801d2744cb96ffc4621887a98a0b5f285cefae3",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_all_annual_metrics.csv",
+      "byte_identical": true,
+      "sha256": "ed362ea33c088ea4044fdbbcd2edcc57af5a08bfcedb3a1755e410b8cacf5e44",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_annual_metrics.csv",
+      "byte_identical": true,
+      "sha256": "d381107540b4ce1b1d08736b920fbd85da2d962f5ce81d7c49c92f5d8b4adc1b",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_calibration.csv",
+      "byte_identical": true,
+      "sha256": "d0de4de0ff0e89503c59f3b96d82e27f5030dc67cb933928d6304aae67f7c176",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_annual_metrics.csv",
+      "byte_identical": true,
+      "sha256": "7ebab290f62bc636ff151fe7467c47f36e62a0db7d33446c0d792f58850f6352",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_calibration.csv",
+      "byte_identical": true,
+      "sha256": "59d10fe21663facc2225b7dd1218b4ee5b9ca742c98b5917da19bdee45caf86d",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_evaluation_predictions.csv",
+      "byte_identical": false,
+      "sha256": "ea1dd1fdb39c37e87ed3fdfab0bd26e12498f9ff2859037b31115de08ba4e0b8",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_metrics.csv",
+      "byte_identical": true,
+      "sha256": "524a18ecc37057aaa65de773cedec2bbbec94985a8ee119e9b245f00cef978bf",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_standard_metrics.csv",
+      "byte_identical": true,
+      "sha256": "6047e70c4b50daa510b2b302deae7d76b0a75e2b04f06b2d68e91b4c46058e40",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_standard_uncertainty.csv",
+      "byte_identical": true,
+      "sha256": "7fb9c420844031d1fa44230ef33e81286f3e00f2c5d265c9cf6255d94fda8cf9",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_conditional_uncertainty.csv",
+      "byte_identical": false,
+      "sha256": "5a0aa2402bee8bc343fe2836009adca4c7a2282eda66a9d0acd26c2ec49eeee3",
+      "numerically_reproduced": true,
+      "differences": {
+        "skill_low": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "preseason_evaluation_predictions.csv",
+      "byte_identical": false,
+      "sha256": "1adacd5034078a2113a220efbf396fb05b167f1eb1b91d1f9173d36663991e9f",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_metrics.csv",
+      "byte_identical": true,
+      "sha256": "93f044a1c800589ed6a77a4af1d2f908bceccdb84684d7d235f2a7255ad709db",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_player_forecasts.csv",
+      "byte_identical": false,
+      "sha256": "9db5af6fab1f9e75aa9d96a76f2506414a81b5920d6bc7c0ac9d5e78875830d2",
+      "numerically_reproduced": true,
+      "differences": {
+        "p_ew_days_90": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        },
+        "p_ew_days_365": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "preseason_role_forecasts.csv",
+      "byte_identical": false,
+      "sha256": "f45578d316ff81fa9b42e2f537bdfbacd9d86a17aa861328e30c2a10fc289cfa",
+      "numerically_reproduced": true,
+      "differences": {
+        "p_ew_balls_120": {
+          "max_absolute_difference": 1.1102230246251565e-16,
+          "tolerance": 1e-10
+        },
+        "p_ew_balls_300": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        },
+        "p_ew_balls_600": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        },
+        "p_ew_balls_1200": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        },
+        "p_ew_days_90": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        },
+        "p_ew_days_365": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "preseason_role_weights.csv",
+      "byte_identical": true,
+      "sha256": "e23049ced6ec91ecf671eb00711f85b80f1ca3d562903950219e43618afabf60",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_standard_metrics.csv",
+      "byte_identical": true,
+      "sha256": "25bdf3fcafc60e19d65693d1c9d3bb53d6797bc4678a823546c5c5084223205c",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_standard_uncertainty.csv",
+      "byte_identical": true,
+      "sha256": "53c641b7ae3a01121a9107a9d5f6436b6e32018dd99d33294d135fe8f3eae985",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "preseason_uncertainty.csv",
+      "byte_identical": false,
+      "sha256": "e11b872b5af025994e7f22b80917dda1034b5141a9619362c4e7201ac1de0402",
+      "numerically_reproduced": true,
+      "differences": {
+        "brier_difference": {
+          "max_absolute_difference": 1.0164395367051604e-20,
+          "tolerance": 1e-10
+        },
+        "brier_low": {
+          "max_absolute_difference": 6.776263578034403e-21,
+          "tolerance": 1e-10
+        },
+        "brier_high": {
+          "max_absolute_difference": 3.3881317890172014e-21,
+          "tolerance": 1e-10
+        },
+        "skill_low": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "preseason_validation_grid.csv",
+      "byte_identical": true,
+      "sha256": "f3b3ccb61fdfcd34f557015cfc29911b05098f63ce31246d36a1b4df27f695ae",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "raw_clipping_sensitivity.csv",
+      "byte_identical": true,
+      "sha256": "9ab0eaaf514ef82f408f2f0ebb6a18dcf5338a420e56f0a2ec8fdc720c58863c",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_all_annual_metrics.csv",
+      "byte_identical": true,
+      "sha256": "0b3764d61a1d002ecf8033aa86a5c9e85d98e9d99995ae5d1470cbebdd020feb",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_annual_metrics.csv",
+      "byte_identical": true,
+      "sha256": "c0719759dc2f4b4b0f5ff1800cef80c183bde13f90a581b119ee7e3263f0a85f",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_calibration.csv",
+      "byte_identical": true,
+      "sha256": "bd601a459ec6e956297eacbec42f43456b41606b4b65290dbe6e64ea6ed64c02",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_evaluation_predictions.csv",
+      "byte_identical": false,
+      "sha256": "365cc42cb2682bc199bb04e23825953d2007690ae326513355bdf76ca928dac7",
+      "numerically_reproduced": true,
+      "differences": {
+        "ew_balls_120_B": {
+          "max_absolute_difference": 4.440892098500626e-16,
+          "tolerance": 1e-10
+        },
+        "ew_balls_300_B": {
+          "max_absolute_difference": 1.7763568394002505e-15,
+          "tolerance": 1e-10
+        },
+        "ew_balls_1200_B": {
+          "max_absolute_difference": 8.881784197001252e-16,
+          "tolerance": 1e-10
+        },
+        "p_ew_balls_300": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "sequential_metrics.csv",
+      "byte_identical": true,
+      "sha256": "412a14169322d8b8ab89f5db3022dc7794c438ebdac2f475f2aa04bcadc06636",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_standard_metrics.csv",
+      "byte_identical": true,
+      "sha256": "683b7abf3625caca06660179d7235ee5557c73f78623ec889ad09149e7d2f5e4",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_standard_uncertainty.csv",
+      "byte_identical": true,
+      "sha256": "8106818285e9ee5af7fe398860e17d875a822f5de42d97476ceb9f41ef607cbf",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "sequential_uncertainty.csv",
+      "byte_identical": false,
+      "sha256": "485f6f7d0a3eb0eeec4b216cd653ea67f7848be16d7135c6854e3ffaf1b5abfb",
+      "numerically_reproduced": true,
+      "differences": {
+        "skill_low": {
+          "max_absolute_difference": 9.71445146547012e-17,
+          "tolerance": 1e-10
+        },
+        "skill_high": {
+          "max_absolute_difference": 2.220446049250313e-16,
+          "tolerance": 1e-10
+        }
+      }
+    },
+    {
+      "file": "sequential_validation_grid.csv",
+      "byte_identical": true,
+      "sha256": "fbe05ac0d8548f3db7213ddee32fda8494652310fbbbcc66f77d16fd356aa0a4",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "subgroups_opposition.csv",
+      "byte_identical": true,
+      "sha256": "2cce129420a5827791672e2c20160e3c9ae20caae29e6ffd1ba4ec8469e457e3",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "subgroups_phase.csv",
+      "byte_identical": true,
+      "sha256": "be57ca76200d4716480f0072195a618590a9e28f2f29a2b778ef606f05a9ed52",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "subgroups_venue_group.csv",
+      "byte_identical": true,
+      "sha256": "f4d4344cacb2249547c2fb5a6ac45eb6dc81f9785c3bddb78727c440577d686c",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "temporary_form_cases.csv",
+      "byte_identical": true,
+      "sha256": "c4af9c9089033da33f1a276f83e3642da9434abce51a0d91eaf572677d784492",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "venue_mapping.csv",
+      "byte_identical": true,
+      "sha256": "9033dfe736deb7e2c747b252861dac4e4ab22061d4d907fb94238e42754114fa",
+      "numerically_reproduced": true,
+      "differences": {}
+    },
+    {
+      "file": "watchlist_bounce_back.csv",
+      "byte_identical": false,
+      "sha256": "eca51085c322b58bd8ef9efefc039f3fdfb5ac900f2ab32366d5851424a6312d",
+      "numerically_reproduced": true,
+      "differences": {
+        "forecast_low": {
+          "max_absolute_difference": 3.3206617052056187e-06,
+          "tolerance": 1e-05
+        },
+        "forecast_high": {
+          "max_absolute_difference": 1.136551750907655e-07,
+          "tolerance": 1e-05
+        },
+        "change_low": {
+          "max_absolute_difference": 2.1954665897772063e-08,
+          "tolerance": 1e-05
+        },
+        "change_high": {
+          "max_absolute_difference": 4.2407590460091793e-07,
+          "tolerance": 1e-05
+        },
+        "expected_per100_low": {
+          "max_absolute_difference": 0.0003320661705252803,
+          "tolerance": 0.001
+        },
+        "expected_per100_high": {
+          "max_absolute_difference": 1.1365517504913214e-05,
+          "tolerance": 0.001
+        }
+      }
+    },
+    {
+      "file": "watchlist_in_form.csv",
+      "byte_identical": false,
+      "sha256": "b1c9fc001c155fdd2b89eeecdc764309d33238627ba685ec3ac96a34f799c3a8",
+      "numerically_reproduced": true,
+      "differences": {
+        "forecast_low": {
+          "max_absolute_difference": 3.819355468975827e-07,
+          "tolerance": 1e-05
+        },
+        "forecast_high": {
+          "max_absolute_difference": 3.1987456938775694e-07,
+          "tolerance": 1e-05
+        },
+        "change_low": {
+          "max_absolute_difference": 9.67223805900183e-07,
+          "tolerance": 1e-05
+        },
+        "change_high": {
+          "max_absolute_difference": 3.0005250149789386e-07,
+          "tolerance": 1e-05
+        },
+        "expected_per100_low": {
+          "max_absolute_difference": 3.819355469314445e-05,
+          "tolerance": 0.001
+        },
+        "expected_per100_high": {
+          "max_absolute_difference": 3.198745693921978e-05,
+          "tolerance": 0.001
+        }
+      }
+    }
+  ]
+}

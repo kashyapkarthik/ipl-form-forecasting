@@ -1,0 +1,11 @@
+{
+  "raw_events": 295732,
+  "all_position_legal_balls": 284465,
+  "top7_legal_balls": 267994,
+  "sixes": 14916,
+  "min_date": "2008-04-18",
+  "max_date": "2026-05-31",
+  "matches": 1243,
+  "players": 495,
+  "source_sha256": "5757e04287179767ff8495f02902bd13812b9572ec8fa2ac1347ec2e9c6d4709"
+}

@@ -1,0 +1,5 @@
+season,model,training_last_date,test_first_date,training_N,iterations,recent_coefficient
+2025,context,2024-05-26,2025-03-22,73611,23,
+2025,context_recent,2024-05-26,2025-03-22,73611,30,0.02732555632247413
+2026,context,2025-06-03,2026-03-28,75735,27,
+2026,context_recent,2025-06-03,2026-03-28,75735,25,0.019781281938409567

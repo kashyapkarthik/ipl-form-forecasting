@@ -75,6 +75,7 @@ def run():
               limits=['Conditional on playing in the IPL and having the same role mix; no current roster, injury or availability model.',
                       'No future venue/opposition mix prediction; six rate is a power-hitting measure, not all-round batting quality.',
                       'Stability ranges exclude model-selection uncertainty and unseen regime changes; not probabilities of true ability improvement.',
+                      'Player ranges are marginal, without adjustment for screening many candidates.',
                       'In-form/rebound tags are point-estimate screens, not statistically confirmed claims.'],replicates=reps)
     (OUT/'forecast_metadata.json').write_text(json.dumps(meta,indent=2)+'\n')
     print(f'{len(result)} forecasts; {result.in_form_candidate.sum()} in-form; {result.bounce_back_candidate.sum()} bounce-back screens',flush=True)

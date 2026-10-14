@@ -1,0 +1,40 @@
+{
+  "sequential": {
+    "winner": "rolling_300",
+    "recent_winner": "rolling_300",
+    "rolling_winner": "rolling_300",
+    "exponential_winner": "ew_balls_300",
+    "display_models": [
+      "population",
+      "raw_expanding",
+      "expanding",
+      "rolling_300",
+      "ew_balls_300",
+      "raw_recent",
+      "rolling_30",
+      "current"
+    ],
+    "validation_log_loss": 0.2719503581526951,
+    "selection_year": 2024,
+    "selection_target": "observed role conditional next-innings forecast"
+  },
+  "preseason": {
+    "winner": "rolling_120",
+    "recent_winner": "rolling_120",
+    "rolling_winner": "rolling_120",
+    "exponential_winner": "ew_balls_1200",
+    "display_models": [
+      "population",
+      "raw_expanding",
+      "expanding",
+      "rolling_120",
+      "ew_balls_1200",
+      "raw_recent",
+      "rolling_30"
+    ],
+    "validation_log_loss": 0.272370432831995,
+    "selection_year": 2024,
+    "selection_target": "past-role-mixture player forecast"
+  },
+  "protocol_sha256": "c30aacc50fa1b68053ec361ec7b444f59566750e92fd14afde026db2d56ab2d4"
+}

@@ -1,0 +1,2 @@
+model,reference,unit,N,date_blocks,log_loss_difference,log_loss_low,log_loss_high,brier_difference,brier_low,brier_high,skill_pct,skill_low,skill_high
+context_recent,context,date,30980,124,4.806407782503772e-05,-8.023766233952274e-05,0.00017605976932711889,2.18704630974456e-05,-2.845201172917356e-06,4.736283643777288e-05,-0.01695024309940063,-0.0625725911012405,0.02853709943750845

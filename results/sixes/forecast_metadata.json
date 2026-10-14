@@ -1,0 +1,18 @@
+{
+  "model": "rolling_120",
+  "as_of": "2026-10-14",
+  "source_through": "2026-05-31",
+  "reference_date": "2027-03-28",
+  "reference_note": "Assumed opening date for calendar decay, not an announced schedule",
+  "interval": "90% stability range: shared population-player reweighting and within-player/season/role innings resampling; fixed model and role weights",
+  "predictive_example": "100 independent future Bernoulli trials mixed over bootstrap rates; illustrative, not a calibrated season-total prediction interval",
+  "baseline": "Pre-2026 player history, evaluated with the same 2027 priors and 2026 role mix as the forecast; retrospective comparison, not an issued historical forecast",
+  "limits": [
+    "Conditional on playing in the IPL and having the same role mix; no current roster, injury or availability model.",
+    "No future venue/opposition mix prediction; six rate is a power-hitting measure, not all-round batting quality.",
+    "Stability ranges exclude model-selection uncertainty and unseen regime changes; not probabilities of true ability improvement.",
+    "Player ranges are marginal, without adjustment for screening many candidates.",
+    "In-form/rebound tags are point-estimate screens, not statistically confirmed claims."
+  ],
+  "replicates": 400
+}
