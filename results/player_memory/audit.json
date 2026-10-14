@@ -1,0 +1,50 @@
+{
+  "latest_season": 2026,
+  "before_cutoff": "2026-03-28",
+  "after_cutoff": "2026-06-01",
+  "prior_training_seasons": [
+    2023,
+    2024,
+    2025
+  ],
+  "role_mix": "Fixed actual 2026 exposure at both endpoints; retrospective standardisation",
+  "primary_models": [
+    "rolling_120",
+    "rolling_300",
+    "rolling_600",
+    "rolling_1200",
+    "ew_balls_120",
+    "ew_balls_300",
+    "ew_balls_600",
+    "ew_balls_1200",
+    "expanding"
+  ],
+  "stress_and_diagnostic": [
+    "rolling_30",
+    "season_only"
+  ],
+  "players": 40,
+  "replicates": 1000,
+  "seed": 20261016,
+  "simultaneous_comparisons": 360,
+  "simultaneous_critical_value": 3.981474850817452,
+  "prior_fits_at_bound": 26,
+  "prior_fits_total": 6000,
+  "positive_simultaneous_findings": [],
+  "protocol_sha256": "8effbb9f2718d84d305994a1f9514c69c01aae39a54cd0ac861fc24897e68359",
+  "checks": {
+    "all_players_and_models": true,
+    "valid_probabilities": true,
+    "all_preseason_prior_dates": true,
+    "role_weights_sum_one": true,
+    "nonnegative_effective_counts": true,
+    "successes_not_above_opportunities": true
+  },
+  "limits": [
+    "Different memory windows are correlated checks, not independent confirmations.",
+    "Bootstrap stability bands condition on fixed role mix and event memory weights; prior and personal resampling are an approximation, not a fully joint Bayesian posterior.",
+    "The simultaneous band covers the predefined 40x9 family conditionally; stress/season-only and older-baseline contrasts are pointwise only.",
+    "Role adjustment does not remove venue, phase, opposition, health or league effects. Previous context-adjusted uncertainty remains applicable.",
+    "A model estimate rising during 2026 does not prove permanent ability improvement."
+  ]
+}

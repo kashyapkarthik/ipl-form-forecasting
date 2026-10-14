@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "all_40_original_players": true,
+    "all_440_comparisons": true,
+    "no_duplicate_comparisons": true,
+    "all_role_counts_reconstructed": true,
+    "all_role_and_player_shrunk_estimates_reconstructed": true,
+    "same_fixed_role_mix_reconstructed": true,
+    "all_6000_prior_refits_present": true,
+    "all_prior_refits_converged": true,
+    "positive_prior_parameters": true,
+    "all_simultaneous_intervals_contain_zero": true
+  },
+  "largest_reconstruction_difference": 1.1102230246251565e-16,
+  "role_rows_checked": 979,
+  "interval_scope": "Pointwise/resampling algorithm tested separately; this audit reconstructs point estimates, counts and reported simultaneous no-finding result."
+}
