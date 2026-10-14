@@ -7,3 +7,6 @@ results/*.parquet
 reports/rebuild_check_before.json
 .DS_Store
 reports/*.log
+
+# Reproducible six-rate intermediate tables
+results/sixes/*.parquet
