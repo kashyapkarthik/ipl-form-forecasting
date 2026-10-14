@@ -1,0 +1,20 @@
+{
+  "eligible_players": 40,
+  "active_players": 110,
+  "latest_season": 2026,
+  "historical_seasons": [
+    2023,
+    2024,
+    2025
+  ],
+  "bootstrap_replicates": 5000,
+  "seed": 20261015,
+  "absolute_positive_q05": [],
+  "relative_positive_q05": [],
+  "checks": {
+    "counts_reconcile": true,
+    "valid_outcomes": true,
+    "all_eligible_reported": true,
+    "no_duplicate_player_results": true
+  }
+}

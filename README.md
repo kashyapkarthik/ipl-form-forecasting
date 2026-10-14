@@ -23,6 +23,8 @@ A Python research project adapting Brown's early-to-late-season baseball forecas
 
 All percentages are relative changes in log loss, not accuracy or probability-point changes. Six rate captures one aspect of batting. The dataset and evaluation years were already inspected during earlier outcome exploration, so these are exploratory historical results.
 
+A follow-up [individual-player improvement audit](docs/PLAYER_IMPROVEMENT_REPORT.md) examines 2026 changes, persistence, context and multiple-player screening. Rahul and Kishan are promising descriptive candidates; no player has a clearly positive adjusted 95% change interval.
+
 ## Data and modelling
 
 - Checksum-pinned Cricsheet archive: **1,243 matches, 295,732 recorded events**, 2008–2026, through 31 May 2026.

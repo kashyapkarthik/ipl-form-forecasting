@@ -1,0 +1,17 @@
+{
+  "method": "Linear probability regression; player fixed effects and player-by-2026 interactions; role-phase, venue, opposition, innings controls; CR1 match-cluster covariance and t intervals",
+  "balls": 36561,
+  "players": 40,
+  "matches": 293,
+  "design_columns": 121,
+  "design_rank": 121,
+  "dropped_columns": [],
+  "relative_reference": "2026-ball-weighted average adjusted change among all OTHER eligible players",
+  "limits": [
+    "Retrospective associations, not causal ability changes or probability forecasts.",
+    "Context effects are common across players and periods; no bowler quality, health, intent, or within-season dynamic effects.",
+    "Historical comparator pools 2023\u20132025; separate descriptive 2025 comparison checks rebound versus new level.",
+    "Match clustering does not capture every possible dependence across a player career.",
+    "Screening adjustment assumes suitable dependence of p-values; a q-value is not the probability a player has improved."
+  ]
+}

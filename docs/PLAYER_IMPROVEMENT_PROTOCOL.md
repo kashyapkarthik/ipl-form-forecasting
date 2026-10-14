@@ -1,0 +1,13 @@
+# Individual-player improvement audit
+
+Scope fixed on 14 October 2026 before fitting the player-level comparison. This is an exploratory retrospective addition to the six-rate project, not a new untouched test set or proof of permanent ability changes.
+
+- Latest season is 2026 in the pinned archive; six/eligible-ball definitions are unchanged.
+- Screen every player with at least 120 eligible 2026 balls and 300 eligible balls in 2023–2025. No selection on observed improvement. Report excluded active players separately.
+- Show six counts/rates in each season, pooled 2023–2025, 2025 alone, and both 2026 calendar halves. Use the existing shared season midpoint, never a player-specific favourable split.
+- For each eligible player, estimate the 2026 minus 2023–2025 rate change. Resample whole player innings within season, 5,000 replicates, preserving observed innings counts per year. Report 95% percentile ranges; these describe observed change, not permanent ability. Also repeat with 2025 alone.
+- Fit an exploratory linear probability regression to all eligible players' 2023–2026 balls, with separate player intercepts and player-by-2026 changes; adjust for batting-role/phase combinations, venue, opposition and innings. Use full-rank dummy coding and match-cluster sandwich covariance with finite-sample correction. This regression estimates retrospective adjusted rate differences; it is not the project's probability-forecast model. Do not include an additional 2026 indicator, which is exactly redundant with all player-specific 2026 indicators.
+- Compare each adjusted player change with the ball-weighted change of the other eligible players. This is an explicit relative-change contrast, not a claim to remove every league effect. Estimate its uncertainty from the full clustered covariance.
+- Apply two-sided Benjamini–Hochberg false-discovery adjustment across all eligible players, separately for absolute adjusted changes and peer-relative contrasts. Use 5% for evidence labels. Match dependence and model assumptions remain limitations; BH is a screening adjustment, not a guarantee each finding is true.
+- Show each player's 2026 rate after removing their single innings with the most sixes, as a fragility check, not a new significance test. Also show role and phase exposure and the share of 2026 balls in role/phase groups previously observed for that player.
+- Do not force a winner. Distinguish strong adjusted statistical evidence, promising but uncertain changes, rebounds toward previously demonstrated performance, and insufficient historical evidence. A sustained statistical rise is still not proof of improved underlying ability or persistence into 2027.
